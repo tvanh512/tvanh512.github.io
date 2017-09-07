@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>tensorflow</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -39,13 +39,92 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
   <div class="w3-row w3-padding-64">
-      <h1 class="w3-text-teal">About Me</h1>
-      <img src="profile_picture.png" alt="Profile_picture" width="104" height="142">
-      <p> Currently I am second-year PhD student in the Department of Computer Science at CUNY Graduate Center, supervised by Professor <a href="http://mr-pc.org" style="text-decoration: none">Michael Mandel</a>
-.My research deals with Machine Learning and Speech Processing. 
- </p>
-</div>
+      <h1 class="w3-text-teal">Tensor Flow</h1>
+     <p> 
+        Tensorflow is an useful tool to build neural network by Google. You can check the installation guide <a href="https://www.tensorflow.org/install/" style="text-decoration: none">here</a>. I use Mac OS, so I just simply go to Terminal and type "sudo pip install tensorflow".
+          <br /> 
+          Below code is suitable with Python 2.7 and Tensorflow 0.12. Newer versions of Python and Tensorflow might need some small modifications.
+
+          <br /> 
+          Firstly, let's start with a Hello World program:
+      </p>
     
+</div>
+   
+  
+  
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="c1"># Create session with the TensorFlow run time</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
+    <span class="c1"># Define some ops</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">sess</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+
+  
+  
+  
+
+  
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="kn">as</span> <span class="nn">tf</span>
+<span class="c1"># Create session with the TensorFlow run time</span>
+<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span> <span class="k">as</span> <span class="n">sess</span><span class="p">:</span>
+    <span class="c1"># Define some ops</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+    <span class="k">print</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="n">sess</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
   <footer id="myFooter">
     <div class="w3-container w3-theme-l2 w3-padding-32">
       <h4> Linked In</h4>
