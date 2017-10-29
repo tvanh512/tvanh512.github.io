@@ -40,17 +40,29 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 <div class="w3-main" style="margin-left:250px">
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal"> Auditory bubbles </h1>
+      <h1 class="w3-text-teal"> BUBBLE COOPERATIVE NETWORKS FOR IDENTIFYING IMPORTANT SPEECH CUES </h1>
       
       <p> 
         <div align="justify">
 
-             Predicting the intelligibility of noisy recordings is difficult and most current algorithms treat all speech energy as equally important 
-             to intelligibility. We have developed a listening test paradigm and associated analysis techniques that show that energy in certain time-frequency
-             regions is more important to intelligibility than others and can predict the intelligibility of a specific recording of a word in the 
-             presence of a specific noise instance. The analysis learns a map of the importance of each point  in the recording's spectrogram to the
-             overall intelligibility of the word when glimpsed through ``bubbles'' in many noise instances. The important regions identified by the model 
-             from listening test data agreed with the acoustic phonetics literature.
+             Predicting the intelligibility of noisy recordings is difficult and most
+current algorithms treat all speech energy as equally important to intelligibility.
+Our previous work on human perception used a listening
+test paradigm and correlational analysis to show that some energy
+is more important to intelligibility than other energy and that the
+audibility of certain regions containing no speech energy at all can be
+important for correctly identifying certain words. In this paper, we
+propose a system called the “Bubble Cooperative Network” (BCN),
+which aims to predict important areas directly from clean speech.
+Given such a prediction, noise is added to the utterance in unimportant
+regions and then presented to a recognizer. The goal of the BCN
+is to add as much noise as possible without affecting recognition performance,
+encouraging it to identify important regions precisely. Our
+results show that this is possible for a simple speech recognizer that
+compares a noisy test utterance with a clean reference utterance. The
+predicted masks show patterns that are similar to analyses derived
+from human listening tests, but with better generalization and less
+context-dependence than previous approaches.
 </div>
         
       </p>
