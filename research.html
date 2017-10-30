@@ -1,4 +1,106 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar-custom {
+    color: #fff;
+    background-color: #3f51b5;
+    }
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #3f51b5;;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="CV.pdf" class="w3-bar-item w3-button w3-hide-small w3-hover-white">CV</a></li>
+        <li><a href="research.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Research</a></li>
+        <li><a href="publication.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publication</a><li>
+      <li><a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Blog</a><li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+
+    <div class="col-sm-8 text-left"> 
+      <h3> Bubble cooperative networks for identifying important speech cues </h3>
+      
+      <p> 
+        <div align="justify">
+
+             Predicting the intelligibility of noisy recordings is difficult and most
+current algorithms treat all speech energy as equally important to intelligibility.
+Our previous work on human perception used a listening
+test paradigm and correlational analysis to show that some energy
+is more important to intelligibility than other energy and that the
+audibility of certain regions containing no speech energy at all can be
+important for correctly identifying certain words. In this paper, we
+propose a system called the “Bubble Cooperative Network” (BCN),
+which aims to predict important areas directly from clean speech.
+Given such a prediction, noise is added to the utterance in unimportant
+regions and then presented to a recognizer. The goal of the BCN
+is to add as much noise as possible without affecting recognition performance,
+encouraging it to identify important regions precisely. Our
+results show that this is possible for a simple speech recognizer that
+compares a noisy test utterance with a clean reference utterance. The
+predicted masks show patterns that are similar to analyses derived
+from human listening tests, but with better generalization and less
+context-dependence than previous approaches.
+</div>
+        
+      </p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+</footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
 <html>
 <title>research</title>
 <meta charset="UTF-8">
@@ -35,34 +137,33 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div align="justify">
 
              Predicting the intelligibility of noisy recordings is difficult and most
-current algorithms treat all speech energy as equally important to intelligibility.
-Our previous work on human perception used a listening
-test paradigm and correlational analysis to show that some energy
-is more important to intelligibility than other energy and that the
-audibility of certain regions containing no speech energy at all can be
-important for correctly identifying certain words. In this paper, we
-propose a system called the “Bubble Cooperative Network” (BCN),
-which aims to predict important areas directly from clean speech.
-Given such a prediction, noise is added to the utterance in unimportant
-regions and then presented to a recognizer. The goal of the BCN
-is to add as much noise as possible without affecting recognition performance,
-encouraging it to identify important regions precisely. Our
-results show that this is possible for a simple speech recognizer that
-compares a noisy test utterance with a clean reference utterance. The
-predicted masks show patterns that are similar to analyses derived
-from human listening tests, but with better generalization and less
-context-dependence than previous approaches.
-</div>
-        
-      </p>
+          current algorithms treat all speech energy as equally important to intelligibility.
+          Our previous work on human perception used a listening
+          test paradigm and correlational analysis to show that some energy
+          is more important to intelligibility than other energy and that the
+          audibility of certain regions containing no speech energy at all can be
+          important for correctly identifying certain words. In this paper, we
+          propose a system called the “Bubble Cooperative Network” (BCN),
+          which aims to predict important areas directly from clean speech.
+          Given such a prediction, noise is added to the utterance in unimportant
+          regions and then presented to a recognizer. The goal of the BCN
+          is to add as much noise as possible without affecting recognition performance,
+          encouraging it to identify important regions precisely. Our
+          results show that this is possible for a simple speech recognizer that
+          compares a noisy test utterance with a clean reference utterance. The
+          predicted masks show patterns that are similar to analyses derived
+          from human listening tests, but with better generalization and less
+          context-dependence than previous approaches.
+          </div>    
+        </p>
     </div>
   </div>
 
     
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
+     <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32">
     </div>  
-  </footer>
+      </footer>
 <!-- END MAIN -->
 </div>
 
