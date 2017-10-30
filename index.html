@@ -24,7 +24,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   </div>
 </div>
 
-
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main">
   <div class="w3-row w3-padding-64">
@@ -68,6 +69,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   </footer>
 <!-- END MAIN -->
 </div>
+
+<script>
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script>
+
 
 </body>
 </html>
