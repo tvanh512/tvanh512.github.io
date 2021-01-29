@@ -71,28 +71,37 @@
             focuses on Machine Learning and Speech Processing.         
         </div>
       </p>
+    
       <p>
-        <div align="justify">
           Research summary: 
-         </div>
+      </p>
+      
+       <p>
           <div align="justify">
             An automatic speech recognition (ASR) can make predictions based on irrelevant signals when it learns the wrong associations between the label and noise in the training data. 
             This leads to low performance when the model is deployed in the real world. Therefore, I conduct research on finding the time-frequency regions in the spectrogram that the ASR pays 
             attention to when making a transcription. Those regions are called audible importance/attention maps.
             Attention maps can enhance the model’s interpretability and performance [1][2]; or boost the accuracy in a small training set scenario [3]. <br>
           </div>
+       </p>
+        <p>
           <div align="justify">
             I have published 2 conference papers (Interspeech) and a journal paper (TASLP) on this topic. In the first article, I proposed an adversarial-based approach to predict the 2-D importance maps (IM) without the ground true IM. The importance maps were 2-D as they indicated important time-frequency points.
             Meanwhile, the 1-D attention maps commonly used in ASR showing only which time steps are important. The importance maps show patterns that are similar to analyses derived from human listening tests while exhibiting better generalization. <br>
            </div>
+         </p>
+         <p>
             <div align="justify">
             In the second paper, I developed a new evaluation metric, which was the first to evaluate the importance maps in a structured prediction task. This metric is different from the existing metrics, in which the accuracy of other words in a sentence and the predicted important speech energies are taken into account. <br>
             </div>
+          </p>
+          <p>
             <div align="justify">
             In the journal article, I compared the important time-frequency regions that humans, non-neural network ASR, and neural network ASR focus on. My analysis concluded that the neural network ASR has importance maps that are much more similar to the human ones than the non-neural network ASR’s maps, 
             however, it does not capture all the cues that the human listeners utilize. On this basis, it is recommended that the ASR’s performance in noisy conditions can be improved by adapting it to paying better attention to the cues used by human listeners. <br>
-            <div align="justify">
-            <div align="justify">
+            </div>
+          </p>
+
             [1] K. Xu, J. Ba, R. Kiros, K. Cho, A. Courville, R. Salakhudinov, R. Zemel, and Y. Bengio, “Show, attend and tell: Neural image caption generation with visual attention,” in ICML, 2015. <br>
 
             [2] J. Schlemper,  O. Oktay,  M. Schaap,  M. P. Heinrich,  B. Kainz,B.   Glocker,   and   D.   Rueckert,   “Attention   gated   networks:Learning to leverage salient regions in medical images,”MedicalImage Anal.,  vol.  53,  pp.  197–207,  2019.  <br>
